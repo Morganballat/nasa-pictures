@@ -1,0 +1,34 @@
+@font-face {
+	font-family: 'starwars';
+	src: url('./star_jedi/starjedi/Starjedi.ttf');
+}
+
+@font-face {
+	font-family: 'starwars2';
+	src: url('./star_jedi/stjedise/STJEDISE.TTF');
+}
+body {
+	width: auto;
+	background-color: black;
+}
+
+.space_image {
+	width: 100%;
+	padding: 2rem 0;
+}
+
+#date {
+}
+
+h1 {
+	font-family: 'starwars';
+	text-align: left;
+	color: blanchedalmond;
+}
+
+.explanation,
+.author {
+	font-family: 'starwars2';
+	color: blanchedalmond;
+	text-align: justify;
+}
