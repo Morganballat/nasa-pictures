@@ -14,7 +14,7 @@ body {
 
 .space_image {
 	width: 100%;
-	padding: 2rem 0;
+	padding: 1rem 0;
 }
 
 #date {
@@ -32,4 +32,23 @@ h1 {
 	/* font-family: 'starwars2'; */
 	color: blanchedalmond;
 	text-align: justify;
+}
+
+.date_input {
+	display: flex;
+	justify-content: center;
+}
+
+.skyrocket_left,
+.skyrocket_right {
+	width: 7rem;
+	height: 7rem;
+}
+
+.skyrocket_left {
+	transform: rotate(-90deg);
+}
+
+.skyrocket_right {
+	transform: rotate(90deg);
 }

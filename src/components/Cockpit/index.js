@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './style.css';
 
+import Skyrocket from './images/skyrocket.png';
+
 const Cockpit = () => {
 	//HOOKS
 	const [datevalue, setDateValue] = useState(
 		new Date().toISOString().split('T')[0]
 	);
+	// console.log(datevalue);
+
 	const [image, setImage] = useState();
 	const [explanation, setExplanation] = useState();
 	const [title, setTitle] = useState();
@@ -20,6 +24,13 @@ const Cockpit = () => {
 		setDateValue(event.target.value);
 	};
 
+	// const nextDay = (event) => {
+	// 	setDateValue(datevalue);
+	// };
+	// const previousDay = (event) => {
+	// 	setDateValue(datevalue);
+	// };
+
 	//Axios request
 	axios
 		.get(
@@ -27,7 +38,7 @@ const Cockpit = () => {
 		)
 		.then((res) => {
 			const spaceData = res.data;
-			console.log(spaceData);
+			// console.log(spaceData);
 			setImage(spaceData.hdurl);
 			setExplanation(spaceData.explanation);
 			setTitle(spaceData.title);
@@ -38,6 +49,8 @@ const Cockpit = () => {
 	return (
 		<div>
 			<div className='date_input'>
+				{/* <img src={Skyrocket} alt='' className='skyrocket_left' /> */}
+
 				<form>
 					<input
 						type='date'
@@ -49,6 +62,7 @@ const Cockpit = () => {
 						max={dateMax}
 					/>
 				</form>
+				{/* <img src={Skyrocket} alt='' className='skyrocket_right' /> */}
 			</div>
 			<div className='picture'>
 				<img className='space_image' src={image} alt='' />
