@@ -28,6 +28,7 @@ const Cockpit = () => {
 	//INPUT VALUE MANAGEMENT
 	const handleChange = (event) => {
 		setDateValue(event.target.value);
+		setLoader(true);
 	};
 
 	// const nextDay = (event) => {
@@ -49,7 +50,7 @@ const Cockpit = () => {
 			setExplanation(spaceData.explanation);
 			setTitle(spaceData.title);
 			setAuthor(spaceData.copyright);
-			// setLoader(false);
+			setLoader(false);
 		});
 	// .catch(console.log('une erreur est survenue'));
 
