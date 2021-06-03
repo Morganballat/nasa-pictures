@@ -32,8 +32,8 @@ const Cockpit = () => {
 			setExplanation(spaceData.explanation);
 			setTitle(spaceData.title);
 			setAuthor(spaceData.copyright);
-		})
-		.catch(console.log('une erreur est survenue'));
+		});
+	// .catch(console.log('une erreur est survenue'));
 
 	return (
 		<div>

@@ -12,10 +12,12 @@
 
 .nasa_logo {
 	width: 50%;
+	height: auto;
 }
 
 .signature {
 	width: 50%;
+	height: auto;
 
 	/* margin: -5rem; */
 }
