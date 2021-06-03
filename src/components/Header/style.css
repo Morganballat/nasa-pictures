@@ -7,18 +7,18 @@
 	color: white;
 	font-family: 'starwars';
 	font-size: 2rem;
-	vertical-align: center;
+	vertical-align: middle;
 }
 
 .nasa_logo {
-	width: 50%;
-	height: auto;
+	width: 12rem;
+	height: 6rem;
 }
 
 .signature {
-	width: 50%;
-	height: auto;
-
+	width: 12rem;
+	height: 6rem;
+	vertical-align: middle;
 	/* margin: -5rem; */
 }
 

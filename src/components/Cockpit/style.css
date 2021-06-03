@@ -29,7 +29,7 @@ h1 {
 
 .explanation,
 .author {
-	font-family: 'starwars2';
+	/* font-family: 'starwars2'; */
 	color: blanchedalmond;
 	text-align: justify;
 }
