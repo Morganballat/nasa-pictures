@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'starwars';
+	src: url('../Cockpit/star_jedi/starjedi/SfDistantGalaxy-0l3d.ttf');
+}
+
+.feat {
+	color: white;
+	font-family: 'starwars';
+	font-size: 2rem;
+	vertical-align: center;
+}
+
+.nasa_logo {
+	width: 50%;
+}
+
+.signature {
+	width: 50%;
+
+	/* margin: -5rem; */
+}
+
+.header {
+	display: flex;
+	width: 100%;
+	padding-bottom: 1.5rem;
+	justify-content: center;
+}

@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'starwars';
-	src: url('./star_jedi/starjedi/Starjedi.ttf');
+	src: url('./star_jedi/starjedi/SfDistantGalaxy-0l3d.ttf');
 }
 
 @font-face {
@@ -24,6 +24,7 @@ h1 {
 	font-family: 'starwars';
 	text-align: left;
 	color: blanchedalmond;
+	font-size: 2rem;
 }
 
 .explanation,
