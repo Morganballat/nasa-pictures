@@ -1,20 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './style.css';
 
 import Skyrocket from './images/skyrocket.png';
+import Loader from '../Loader';
+import Header from '../Header';
 
 const Cockpit = () => {
 	//HOOKS
+	const [loader, setLoader] = useState(true);
 	const [datevalue, setDateValue] = useState(
 		new Date().toISOString().split('T')[0]
 	);
-	// console.log(datevalue);
-
 	const [image, setImage] = useState();
 	const [explanation, setExplanation] = useState();
 	const [title, setTitle] = useState();
 	const [author, setAuthor] = useState();
+
+	//USEEFFECT
+	useEffect(() => {
+		setTimeout(() => setLoader(false), 3500);
+	}, []);
 
 	//GET DATE OF TODAY
 	const dateMax = new Date().toISOString().split('T')[0];
@@ -43,11 +49,15 @@ const Cockpit = () => {
 			setExplanation(spaceData.explanation);
 			setTitle(spaceData.title);
 			setAuthor(spaceData.copyright);
+			// setLoader(false);
 		});
 	// .catch(console.log('une erreur est survenue'));
 
-	return (
+	return loader ? (
+		<Loader />
+	) : (
 		<div>
+			<Header />
 			<div className='date_input'>
 				{/* <img src={Skyrocket} alt='' className='skyrocket_left' /> */}
 

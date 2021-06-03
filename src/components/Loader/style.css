@@ -1,0 +1,13 @@
+.skyrocket_gif {
+	height: 6.5rem;
+	width: 5rem;
+	position: absolute;
+	top: 45%;
+	left: 42%;
+}
+
+.loader_container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}

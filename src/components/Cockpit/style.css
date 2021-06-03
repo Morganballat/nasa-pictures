@@ -7,6 +7,9 @@
 	font-family: 'starwars2';
 	src: url('./star_jedi/stjedise/STJEDISE.TTF');
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
 body {
 	width: auto;
 	background-color: black;
@@ -18,6 +21,13 @@ body {
 }
 
 #date {
+	width: auto;
+	border-radius: 3rem;
+	border: 0.8rem solid white;
+
+	font-family: starwars;
+
+	text-align: center;
 }
 
 h1 {
@@ -29,8 +39,8 @@ h1 {
 
 .explanation,
 .author {
-	/* font-family: 'starwars2'; */
-	color: blanchedalmond;
+	font-family: 'Mate SC', serif;
+	color: white;
 	text-align: justify;
 }
 
